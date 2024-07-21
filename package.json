@@ -13,6 +13,8 @@
     "build:firefox": "cross-env __FIREFOX__=true turbo build",
     "zip": "turbo zip",
     "zip:firefox": "cross-env __FIREFOX__=true turbo zip",
+    "e2e": "turbo e2e",
+    "e2e:firefox": "cross-env __FIREFOX__=true turbo e2e",
     "dev-server": "pnpm -F hmr ready && pnpm -F hmr dev",
     "dev": "turbo ready && turbo watch dev --concurrency 20",
     "dev:firefox": "turbo ready && cross-env __FIREFOX__=true turbo watch dev --concurrency 20",

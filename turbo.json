@@ -36,6 +36,12 @@
       ],
       "cache": false
     },
+    "e2e": {
+      "dependsOn": [
+        "zip"
+      ],
+      "cache": false
+    },
     "type-check": {
       "cache": false
     },
