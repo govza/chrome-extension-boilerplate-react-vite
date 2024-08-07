@@ -1,0 +1,9 @@
+describe('Webextension Options Page', () => {
+  it('should make options page accessible', async () => {
+    const extensionPath = await browser.getExtensionPath();
+    const optionsUrl = `${extensionPath}/options/index.html`;
+    await browser.url(optionsUrl);
+
+    await browser.waitUntil(async () => (await browser.getTitle()) === 'Options');
+  });
+});
